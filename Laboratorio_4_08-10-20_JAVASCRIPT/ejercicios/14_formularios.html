@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Ejemplo de Formularios</title>
+</head>
+<body>
+    <h1>Ejercicio 14 - Estructura FORMULARIO</h1>
+    <form>
+        Introduzca su Nombre:
+        <input type="text" id="nombre"><br>
+        Introduzca su Edad:
+        <input type="text" id="edad"><br>
+        <input type="button" value="Mostrar" onclick="mostrar()">
+        <p id="resultado"></p>
+    </form>
+    <script>
+        function mostrar(){
+            var nom = document.getElementById("nombre").value;
+            var ed = document.getElementById("edad").value;
+            document.getElementById("resultado").innerHTML = "Su nombre es: " + nom + " y tu edad es: " + ed;
+        }
+    </script>
+</body>
+</html>
