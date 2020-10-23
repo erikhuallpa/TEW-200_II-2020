@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejercicio 6 jQuery Selector</title>
+    <!-- script para llamar a jquery con CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <h1>Ejercicio 6 - Seleccionar selector con ID</h1>
+    <p id="test">Soy primer Parrafo con ID</p>
+    <p>Yo soy parrafo 2do Parrafo sin ID</p>
+    <button>Presione aqui</button>
+    <p>Al Presionar el Boton Ocultara el parrafo con ID="test".</p>
+    <!-- funciones de jquery -->
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#test").hide();
+        });
+      });
+    </script>
+  </body>
+</html>
